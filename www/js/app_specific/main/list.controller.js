@@ -67,11 +67,11 @@
 
         vm.pathUpdate = function (path) {
             
-           // if (authenticateSrvc.getAuthInfo() == null) {
-               // alert("Press 'Authenticate'.");
-            //} else {
+            if (authenticateSrvc.getAuthInfo() == null) {
+                alert("Press 'Authenticate'.");
+            } else {
                 $state.go('update', { path: path });
-            //} //*/
+            } //*/
             
            /*
            bluetoothSerial.enable(
